@@ -1,9 +1,10 @@
 <template>
   <header
     :class="{ scrolled: !scrollShadowBoolean }"
-    class="flex items-center text-mysqr-dark-dark bg-mysqr-light fixed top-0 inset-x-0 z-50 shadow-sm md:shadow-none"
+    class="flex justify-center items-center fixed top-0 inset-x-0 z-50 shadow-sm md:shadow-none"
   >
-    <div class="container flex flex-col">
+    <div class="container flex flex-col mx-auto">
+      <!-- :class="scrollShadowBoolean ? 'text-white ' : 'text-gray-700'" -->
       <nav class="flex justify-between items-center py-3">
         <div class="py-1 mx-2">
           <a href="">
@@ -15,48 +16,31 @@
           </a>
         </div>
 
-        <ul
-          class="hidden md:flex flex-1 flex-end justify-center items-center md:gap-8 lg:gap-12 text-sm"
-        >
-          <li
-            v-for="navbar_link in navbar_links"
-            :key="navbar_link"
-            class="cursor-pointer"
+        <div class="">
+          <ul
+            class="hidden md:flex flex-1 flex-end justify-center items-center md:gap-8 lg:gap-12 text-sm"
           >
-            <a
-              :href="`#${navbar_link.in_page_route_by_id}`"
-              class="cursor-pointer text-gray-800 hover:text-mysqr-main"
+            <li
+              v-for="navbar_link in navbar_links"
+              :key="navbar_link"
+              class="cursor-pointer"
             >
-              {{ navbar_link.title }}
-            </a>
-          </li>
+              <a
+                :href="`#${navbar_link.in_page_route_by_id}`"
+                class="cursor-pointer hover:text-mysqr-main"
+              >
+                {{ navbar_link.title }}
+              </a>
+            </li>
+          </ul>
 
           <button
             @click="navbarTogglerIsOpenBoolean = !navbarTogglerIsOpenBoolean"
-            class="flex md:hidden mysqr-btn mysqr-btn-hover-main-bg py-1 px-3 hover:shadow-md mx-2"
+            class="flex md:hidden py-1 px-3 hover:shadow-md mx-2"
           >
-            <span class="fa fa-bars text-2xl"></span>
+            <i class="fa fa-bars text-2xl"></i>
           </button>
-        </ul>
-
-        <!-- <div class="flex text-sm items-center">
-          <a
-            href="https://archyscript-portfolio.netlify.app/"
-            target="_blank"
-            class="hidden sm:flex mysqr-btn mysqr-btn-hover-main-bg border-2 border-mysqr-dark-dark hover:border-0 hover:shadow-md mx-1"
-          >
-            <button>
-              My Portfolio
-            </button>
-          </a>
-
-          <button
-            @click="navbarTogglerIsOpenBoolean = !navbarTogglerIsOpenBoolean"
-            class="flex md:hidden mysqr-btn mysqr-btn-hover-main-bg py-1 px-3 hover:shadow-md mx-2"
-          >
-            <span class="fa fa-bars text-2xl"></span>
-          </button>
-        </div> -->
+        </div>
       </nav>
 
       <div
@@ -66,7 +50,7 @@
         <div v-for="navbar_link in navbar_links" :key="navbar_link">
           <a
             :href="`#${navbar_link.in_page_route_by_id}`"
-            class="block text-center py-2 mb-1 cursor-pointer text-gray-800 hover:text-mysqr-main"
+            class="block text-center py-2 mb-1 cursor-pointer hover:text-mysqr-main"
           >
             <span>
               {{ navbar_link.title }}
@@ -80,7 +64,7 @@
           <a
             href="https://archyscript-portfolio.netlify.app/"
             target="_blank"
-            class="mysqr-btn mysqr-btn-hover-main-bg border-2 border-mysqr-dark-dark hover:border-0 hover:shadow-md mx-1 px-6 py-2"
+            class="border-2 border-mysqr-dark-dark hover:border-0 hover:shadow-md mx-1 px-6 py-2"
           >
             <button>
               My Portfolio
@@ -145,6 +129,6 @@ export default {
 
 <style scoped>
 header.scrolled {
-  @apply shadow-lg;
+  @apply shadow-lg bg-gray-200;
 }
 </style>

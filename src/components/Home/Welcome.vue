@@ -1,11 +1,17 @@
 <template>
-  <section id="home" class="relative pt-36 pb-8 lg:pb-20 bg-mysqr-semi-light">
-    <div class="container flex flex-col items-center px-2">
+  <section
+    id="home"
+    class="relative pt-36 pb-8 lg:pb-20 w-full h-full bg-no-repeat bg-cover"
+    style="
+      background-image: url('https://cdn.pixabay.com/photo/2022/03/23/21/27/road-7087957_960_720.jpg');
+    "
+  >
+    <div class="flex flex-col items-center px-2">
       <div
-        class="flex flex-1 flex-col items-center justify-center mx-auto lg:items-start px-5 sm:px-0"
+        class="flex flex-col items-center justify-center mx-auto lg:items-start px-5 sm:px-0"
       >
         <h1
-          class="text-mysqr-dark-dark text-3xl se mx-auto md:text-4xl lg:text-5xl font-bold text-center mb-2"
+          class="text-3xl se mx-auto md:text-4xl lg:text-5xl font-bold text-center mb-2"
         >
           ArchyScript
 

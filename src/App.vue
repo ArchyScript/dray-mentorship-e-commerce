@@ -1,9 +1,9 @@
 <template>
   <div>
     <Topbar />
-    <div>
-      <router-view />
-    </div>
+    <!-- <div> -->
+    <router-view />
+    <!-- </div> -->
     <Footer />
   </div>
 </template>

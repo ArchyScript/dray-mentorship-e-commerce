@@ -6,10 +6,11 @@
         <div class="col-span-2 md:col-span-1 flex-1 flex-col">
           <div class="flex justify-between items-center">
             <img
-              :src="require('@/assets/mysquareroof/squareroof2.png')"
+              :src="require('@/assets/home-logo.png')"
               alt="logo"
-              class="h-6 w-auto mb-6"
+              class="h-14 w-auto mb-6"
             />
+            ASCouture
           </div>
 
           <div
@@ -24,7 +25,7 @@
                 {{ address_and_location.title }}
               </h4>
               <span class="text-sm font-light">
-                ‍{{ address_and_location.address }}
+                {{ address_and_location.address }}
               </span>
               <span class="text-sm font-normal">
                 {{ address_and_location.location }}
@@ -66,7 +67,7 @@
 
       <div class="py-2 px-5">
         <p class="mb-10 py-2 lg:px-5 text-sm font-light text-mysqr-dark-dark">
-          &copy; 2022 CeedCap.
+          &copy; 2022 ArchyScript
         </p>
       </div>
     </div>
@@ -98,15 +99,15 @@ export default {
         sub_links: [
           {
             title: 'Learn',
-            link: 'https://www.mysquareroof.com/learn',
+            link: '',
           },
           {
             title: 'How it works',
-            link: 'https://www.mysquareroof.com/how-it-works',
+            link: '-it-works',
           },
           {
             title: 'Support',
-            link: 'https://www.mysquareroof.com/contact',
+            link: '',
           },
         ],
       },
@@ -115,15 +116,15 @@ export default {
         sub_links: [
           {
             title: 'Facebook',
-            link: 'https://www.facebook.com/mysquareroof',
+            link: '',
           },
           {
             title: 'Instagram',
-            link: 'https://www.instagram.com/mysquareroof',
+            link: '',
           },
           {
             title: 'Twitter',
-            link: 'https://twitter.com/mysquareroof',
+            link: '',
           },
         ],
       },
@@ -132,15 +133,15 @@ export default {
         sub_links: [
           {
             title: 'About',
-            link: 'https://www.mysquareroof.com/about',
+            link: '',
           },
           {
             title: 'Privacy Policy',
-            link: 'https://www.mysquareroof.com/privacy',
+            link: '',
           },
           {
             title: 'Terms of Use',
-            link: 'https://www.mysquareroof.com/terms',
+            link: '',
           },
         ],
       },
