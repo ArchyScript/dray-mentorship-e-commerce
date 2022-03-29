@@ -102,19 +102,19 @@ export default {
     const navbar_links = ref([
       {
         title: 'Home',
-        in_page_route_by_id: 'home',
+        in_page_route_by_id: '/',
       },
       {
-        title: 'About Website',
-        in_page_route_by_id: 'about-website',
+        title: 'About',
+        in_page_route_by_id: '/about',
       },
       {
-        title: 'About Developer',
-        in_page_route_by_id: 'about-developer',
+        title: 'Products',
+        in_page_route_by_id: '/proudcts',
       },
       {
-        title: 'Cloned Website',
-        in_page_route_by_id: 'cloned_websites',
+        title: 'Contact',
+        in_page_route_by_id: 'contact',
       },
     ])
 

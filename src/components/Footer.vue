@@ -4,13 +4,15 @@
     <div class="">
       <div class="grid grid-cols-2 gap-6 p-5 lg:p-10">
         <div class="col-span-2 md:col-span-1 flex-1 flex-col">
-          <div class="flex justify-between items-center">
+          <div class="flex justify-centeritems-center">
             <img
               :src="require('@/assets/home-logo.png')"
               alt="logo"
-              class="h-14 w-auto mb-6"
+              class="h-8 w-auto mb-6"
             />
-            ASCouture
+            <span class="font-bold my-auto text-2xl">
+              ASCouture
+            </span>
           </div>
 
           <div

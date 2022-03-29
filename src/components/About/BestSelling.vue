@@ -45,6 +45,7 @@
 import { ref } from 'vue'
 
 export default {
+  name: 'BestSelling',
   setup() {
     const test = ref('test')
 
