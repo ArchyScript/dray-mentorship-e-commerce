@@ -30,16 +30,9 @@
               {{ navbar_link.title }}
             </a>
           </li>
-
-          <button
-            @click="navbarTogglerIsOpenBoolean = !navbarTogglerIsOpenBoolean"
-            class="flex md:hidden mysqr-btn mysqr-btn-hover-main-bg py-1 px-3 hover:shadow-md mx-2"
-          >
-            <span class="fa fa-bars text-2xl"></span>
-          </button>
         </ul>
 
-        <!-- <div class="flex text-sm items-center">
+        <div class="flex text-sm items-center">
           <a
             href="https://archyscript-portfolio.netlify.app/"
             target="_blank"
@@ -56,7 +49,7 @@
           >
             <span class="fa fa-bars text-2xl"></span>
           </button>
-        </div> -->
+        </div>
       </nav>
 
       <div
@@ -96,7 +89,6 @@
 import { onBeforeMount, ref } from 'vue'
 
 export default {
-  name: 'top-bar',
   setup() {
     const scrollShadowBoolean = ref(true)
     const navbarTogglerIsOpenBoolean = ref(false)

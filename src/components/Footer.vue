@@ -77,6 +77,7 @@
 import { ref } from 'vue'
 
 export default {
+  name: 'footer-section',
   setup() {
     const address_and_locations = ref([
       {
