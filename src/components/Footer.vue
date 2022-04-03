@@ -8,9 +8,9 @@
             <img
               :src="require('@/assets/home-logo.png')"
               alt="logo"
-              class="h-8 w-auto mb-6"
+              class="h-8 w-auto"
             />
-            <span class="font-bold my-auto text-2xl">
+            <span class="font-bold my-auto text-xl">
               ASCouture
             </span>
           </div>

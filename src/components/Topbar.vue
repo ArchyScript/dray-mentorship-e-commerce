@@ -6,14 +6,15 @@
     <div class="container flex flex-col mx-auto">
       <!-- :class="scrollShadowBoolean ? 'text-white ' : 'text-gray-700'" -->
       <nav class="flex justify-between items-center py-3">
-        <div class="py-1 mx-2">
-          <a href="">
-            <img
-              class="h-7 cursor-pointer"
-              :src="require('@/assets/home-logo.png')"
-              alt="logo"
-            />
-          </a>
+        <div class="py-1 mx-2 flex justify-center items-center">
+          <img
+            class="h-7 cursor-pointer"
+            :src="require('@/assets/home-logo.png')"
+            alt="logo"
+          />
+          <span class="hidden sm:flex font-semibold my-auto text-lg">
+            ASCouture
+          </span>
         </div>
 
         <div class="">
